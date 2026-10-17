@@ -1,6 +1,6 @@
 # WattWise - go to market
 
-**Live app:** (to be filled in)  
+**Live app:** https://wattwise-home-energy.streamlit.app  
 **Code:** https://github.com/Choquri2000/wattwise
 
 ## Landing copy

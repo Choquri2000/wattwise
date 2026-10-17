@@ -50,9 +50,10 @@ r = ww.analyze(usage, s)
 summ = ww.summarize(r, s, currency)
 
 st.subheader("Summary")
-st.markdown(summ["headline"])
+esc = lambda x: x.replace("$", "\$")
+st.markdown(esc(summ["headline"]))
 for t in summ["takeaways"]:
-    st.markdown(f"- {t}")
+    st.markdown(f"- {esc(t)}")
 
 c = st.columns(4)
 c[0].metric("Est. monthly cost", f"{currency}{r['monthly_cost']:,.0f}")
